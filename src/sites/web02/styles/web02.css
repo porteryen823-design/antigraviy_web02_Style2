@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-dark: #0a0e1a;
+  --secondary-dark: #151923;
+  --accent-cyan: #00d9ff;
+  --accent-amber: #ffb800;
+  --accent-emerald: #00ff9d;
+  --steel-gray: #8892a6;
+  --soft-white: #f0f4f8;
+  --glow-blue: rgba(0, 217, 255, 0.2);
+}
+
+@layer base {
+  body {
+    @apply bg-primary-dark text-soft-white font-inter overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-secondary-dark/60 backdrop-blur-md border border-white/10 rounded-xl transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply px-8 py-3 bg-accent-cyan text-primary-dark font-bold rounded-lg hover:shadow-[0_0_20px_rgba(0,217,255,0.5)] transition-all duration-300 active:scale-95;
+  }
+
+  .btn-outline {
+    @apply px-8 py-3 border border-accent-cyan text-accent-cyan font-bold rounded-lg hover:bg-accent-cyan/10 transition-all duration-300 active:scale-95;
+  }
+
+  .tech-card {
+    @apply p-6 glass-card hover:border-accent-cyan hover:shadow-[0_0_30px_rgba(0,217,255,0.3)] hover:-translate-y-1;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-orbitron font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-accent-emerald;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-primary-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-accent-cyan/20 rounded-full hover:bg-accent-cyan/40 transition-colors;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.grid-bg {
+  background-image: 
+    linear-gradient(rgba(0, 217, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+@keyframes gradient-x {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 5s linear infinite;
+}

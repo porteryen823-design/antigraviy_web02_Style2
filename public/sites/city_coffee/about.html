@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Porter Coffee 關於我們 - 了解我們的品牌故事、理念與價值觀">
+  <title>關於我們 - Porter Coffee 都市咖啡館</title>
+  <link rel="stylesheet" href="./assets/css/tailwind.css">
+</head>
+<body>
+  <!-- 導航列（與首頁相同） -->
+  <nav class="fixed top-4 left-4 right-4 z-50 transition-all duration-300">
+    <div class="container-custom">
+      <div class="bg-white/70 backdrop-blur-sm rounded-3xl px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center space-x-2">
+          <div class="w-10 h-10 bg-coffee-gradient rounded-full flex items-center justify-center">
+            <span class="text-white font-heading font-bold text-xl">P</span>
+          </div>
+          <span class="font-heading font-bold text-xl text-primary hidden sm:inline">Porter Coffee</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="nav-link link">首頁</a>
+          <a href="about.html" class="nav-link link">關於我們</a>
+          <a href="menu.html" class="nav-link link">菜單</a>
+          <a href="space.html" class="nav-link link">空間</a>
+          <a href="blog.html" class="nav-link link">部落格</a>
+          <a href="contact.html" class="nav-link link">聯絡</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 cursor-pointer" aria-label="開啟選單" aria-expanded="false">
+          <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden mt-2 bg-white rounded-3xl shadow-soft overflow-hidden">
+        <div class="flex flex-col p-4 space-y-3">
+          <a href="index.html" class="nav-link link py-2">首頁</a>
+          <a href="about.html" class="nav-link link py-2">關於我們</a>
+          <a href="menu.html" class="nav-link link py-2">菜單</a>
+          <a href="space.html" class="nav-link link py-2">空間</a>
+          <a href="blog.html" class="nav-link link py-2">部落格</a>
+          <a href="contact.html" class="nav-link link py-2">聯絡</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 頁面標題 -->
+  <section class="pt-32 pb-16 bg-warm-gradient">
+    <div class="container-custom text-center">
+      <h1 class="text-h1 text-primary mb-4 fade-in-element">關於我們</h1>
+      <p class="text-xl text-text-secondary max-w-2xl mx-auto fade-in-element">
+        一個關於咖啡、閱讀與生活的故事
+      </p>
+    </div>
+  </section>
+
+  <!-- 品牌故事 -->
+  <section class="section bg-bg-primary">
+    <div class="container-custom">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="fade-in-element">
+          <h2 class="text-h2 text-primary mb-6">我們的故事</h2>
+          <div class="space-y-4 text-text-secondary">
+            <p>
+              Porter Coffee 誕生於 2020 年，源自於創辦人對咖啡與文學的熱愛。我們相信，一杯好咖啡不僅是味覺的享受，更是心靈的慰藉。
+            </p>
+            <p>
+              在這個快節奏的都市生活中，我們希望打造一個讓人們可以放慢腳步、靜心閱讀、品味生活的空間。每一杯咖啡都是我們用心的呈現，每一本書都是我們精心的挑選。
+            </p>
+            <p>
+              從選豆、烘焙到沖煮，我們堅持每一個細節。我們與世界各地的咖啡農直接合作，確保每一顆咖啡豆都來自永續種植的農場，為您帶來最純粹的風味。
+            </p>
+          </div>
+        </div>
+        <div class="fade-in-element">
+          <img src="assets/images/about/story.jpg" alt="品牌故事" class="w-full aspect-square object-cover rounded-5xl shadow-soft-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 理念與價值觀 -->
+  <section class="section bg-bg-secondary">
+    <div class="container-custom">
+      <div class="text-center mb-16 fade-in-element">
+        <h2 class="text-h2 text-primary mb-4">我們的理念</h2>
+        <p class="text-text-secondary max-w-2xl mx-auto">
+          品質、永續、人文關懷是我們的核心價值
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card p-8 fade-in-element">
+          <div class="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-h4 text-primary mb-3">品質至上</h3>
+          <p class="text-text-secondary">
+            嚴選優質咖啡豆，專業烘焙技術，確保每一杯咖啡都達到最高標準
+          </p>
+        </div>
+
+        <div class="card p-8 fade-in-element">
+          <div class="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-h4 text-primary mb-3">永續經營</h3>
+          <p class="text-text-secondary">
+            支持公平貿易，與咖啡農建立長期合作關係，保護環境與生態
+          </p>
+        </div>
+
+        <div class="card p-8 fade-in-element">
+          <div class="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-h4 text-primary mb-3">人文關懷</h3>
+          <p class="text-text-secondary">
+            打造溫暖的社區空間，舉辦文化活動，促進人與人之間的連結
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 時間軸 -->
+  <section class="section bg-bg-primary">
+    <div class="container-custom">
+      <div class="text-center mb-16 fade-in-element">
+        <h2 class="text-h2 text-primary mb-4">發展歷程</h2>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-8">
+        <div class="flex gap-6 fade-in-element">
+          <div class="flex-shrink-0 w-24 text-right">
+            <span class="text-h5 text-primary font-semibold">2020</span>
+          </div>
+          <div class="flex-grow pb-8 border-l-2 border-border pl-6">
+            <h3 class="text-h5 text-primary mb-2">品牌創立</h3>
+            <p class="text-text-secondary">
+              Porter Coffee 在台北大安區開設第一家店，開始我們的咖啡旅程
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-6 fade-in-element">
+          <div class="flex-shrink-0 w-24 text-right">
+            <span class="text-h5 text-primary font-semibold">2021</span>
+          </div>
+          <div class="flex-grow pb-8 border-l-2 border-border pl-6">
+            <h3 class="text-h5 text-primary mb-2">獲獎肯定</h3>
+            <p class="text-text-secondary">
+              榮獲「台北最佳獨立咖啡館」獎項，並開始舉辦每週讀書會
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-6 fade-in-element">
+          <div class="flex-shrink-0 w-24 text-right">
+            <span class="text-h5 text-primary font-semibold">2023</span>
+          </div>
+          <div class="flex-grow pb-8 border-l-2 border-border pl-6">
+            <h3 class="text-h5 text-primary mb-2">永續認證</h3>
+            <p class="text-text-secondary">
+              取得公平貿易認證，所有咖啡豆均來自永續農場
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-6 fade-in-element">
+          <div class="flex-shrink-0 w-24 text-right">
+            <span class="text-h5 text-primary font-semibold">2026</span>
+          </div>
+          <div class="flex-grow pl-6">
+            <h3 class="text-h5 text-primary mb-2">持續成長</h3>
+            <p class="text-text-secondary">
+              擴大閱讀空間，增加藝文展覽，成為社區文化交流中心
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section bg-coffee-gradient text-white">
+    <div class="container-custom text-center">
+      <h2 class="text-h2 mb-6 fade-in-element">來訪我們，體驗文青生活</h2>
+      <p class="text-lg mb-8 max-w-2xl mx-auto fade-in-element">
+        歡迎來到 Porter Coffee，讓我們用一杯咖啡，開啟美好的一天
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 fade-in-element">
+        <a href="menu.html" class="btn bg-white text-primary hover:bg-white/90">查看菜單</a>
+        <a href="contact.html" class="btn bg-transparent border-2 border-white hover:bg-white/10">聯絡我們</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾（與首頁相同） -->
+  <footer class="bg-primary text-white py-16">
+    <div class="container-custom">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+              <span class="text-primary font-heading font-bold text-xl">P</span>
+            </div>
+            <span class="font-heading font-bold text-xl">Porter Coffee</span>
+          </div>
+          <p class="text-white/80 text-small">品味生活，從一杯咖啡開始</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold mb-4">快速連結</h4>
+          <ul class="space-y-2 text-small">
+            <li><a href="about.html" class="text-white/80 hover:text-white transition-colors">關於我們</a></li>
+            <li><a href="menu.html" class="text-white/80 hover:text-white transition-colors">菜單</a></li>
+            <li><a href="space.html" class="text-white/80 hover:text-white transition-colors">空間展示</a></li>
+            <li><a href="blog.html" class="text-white/80 hover:text-white transition-colors">部落格</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold mb-4">聯絡我們</h4>
+          <ul class="space-y-2 text-small text-white/80">
+            <li>📍 新竹市公園路 142 號</li>
+            <li>📞 0936891502</li>
+            <li>✉️ porteryen@gmail.com</li>
+            <li>🕐 週一至週日 09:00 - 21:00</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold mb-4">追蹤我們</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors cursor-pointer" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors cursor-pointer" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/20 pt-8 text-center text-small text-white/60">
+        <p>&copy; 2026 Porter Coffee. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="hidden fixed bottom-8 right-8 w-12 h-12 bg-primary hover:bg-primary-dark text-white rounded-full shadow-soft-lg transition-all duration-300 cursor-pointer z-40" aria-label="回到頂部">
+    <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+  </button>
+
+  <script src="./assets/js/navigation.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

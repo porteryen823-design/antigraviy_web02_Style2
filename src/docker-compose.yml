@@ -1,0 +1,10 @@
+services:
+  porter_ai_studio:
+    container_name: porter_ai_studio
+    build:
+      context: ..
+      dockerfile: src/Dockerfile
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+

@@ -1,0 +1,15 @@
+{
+  "name": "city-coffee3",
+  "version": "1.0.0",
+  "description": "文青風格咖啡店多頁網站",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./styles/tailwind.css -o ./assets/css/tailwind.css --watch",
+    "build": "npx tailwindcss -i ./styles/tailwind.css -o ./assets/css/tailwind.css --minify"
+  },
+  "keywords": ["coffee", "cafe", "literary", "artistic"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

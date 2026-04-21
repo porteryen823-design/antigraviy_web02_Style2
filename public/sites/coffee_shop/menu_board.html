@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑板菜單 | 萃 ‧ 光陰 Essence Coffee</title>
+    
+    <!-- Local Fonts: Added Caveat for handwritten English/Numbers -->
+    <link rel="stylesheet" href="fonts/caveat.css">
+    <link rel="stylesheet" href="fonts/noto-serif-tc.css">
+    <link rel="stylesheet" href="fonts/outfit.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="chalkboard-body">
+    <div id="cursor-follower"></div>
+
+    <nav class="navbar chalkboard-nav">
+        <div class="logo">萃 ‧ 光陰</div>
+        <div class="nav-links">
+            <a href="index.html#home">首頁</a>
+            <a href="index.html#about">故事</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">菜單 <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="menu.html">完整菜單</a>
+                    <a href="menu_board.html">黑板菜單</a>
+                </div>
+            </div>
+            <a href="index.html#visit">探訪</a>
+        </div>
+        <button class="cta-small inverse">訂位</button>
+    </nav>
+
+    <main class="chalkboard-page fade-in-up" aria-label="黑板菜單">
+        <div class="chalkboard-shell">
+            <div class="chalkboard" role="img" aria-label="黑板菜單版面">
+                <div class="chalk-corners" aria-hidden="true"></div>
+
+                <div class="chalk-bunting" aria-hidden="true">
+                    <span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span>
+                    <span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span>
+                </div>
+
+                <header class="chalk-header">
+                    <div class="chalk-title">MENU</div>
+                    <div class="chalk-heart">
+                        <div class="heart-shape" aria-hidden="true"></div>
+                        <div class="heart-ribbon">
+                            <span class="ribbon-text">Essence Coffee</span>
+                        </div>
+                        <div class="heart-sub">Daily Special</div>
+                    </div>
+                </header>
+
+                <section class="chalk-special" aria-label="本日推薦">
+                    <div class="cutlery cutlery-left" aria-hidden="true">
+                        <svg viewBox="0 0 64 64" width="54" height="54" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 10c0 10-8 14-8 22 0 6 4 10 8 10s8-4 8-10c0-8-8-12-8-22Z"/>
+                            <path d="M18 42v12"/>
+                        </svg>
+                    </div>
+
+                    <ul class="chalk-lines" aria-label="推薦品項">
+                        <li class="chalk-line">
+                            <span class="line-name">西西里雷蒙</span>
+                            <span class="line-dots" aria-hidden="true"></span>
+                            <span class="line-price">120</span>
+                        </li>
+                        <li class="chalk-line">
+                            <span class="line-name">黑糖海鹽拿鐵</span>
+                            <span class="line-dots" aria-hidden="true"></span>
+                            <span class="line-price">160</span>
+                        </li>
+                        <li class="chalk-line">
+                            <span class="line-name">耶加雪菲手沖</span>
+                            <span class="line-dots" aria-hidden="true"></span>
+                            <span class="line-price">180</span>
+                        </li>
+                        <li class="chalk-line">
+                            <span class="line-name">大人系提拉米蘇</span>
+                            <span class="line-dots" aria-hidden="true"></span>
+                            <span class="line-price">100</span>
+                        </li>
+                    </ul>
+
+                    <div class="cutlery cutlery-right" aria-hidden="true">
+                        <svg viewBox="0 0 64 64" width="54" height="54" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M44 10v18"/>
+                            <path d="M50 10v18"/>
+                            <path d="M56 10v18"/>
+                            <path d="M44 28c0 6 6 8 6 8s6-2 6-8"/>
+                            <path d="M50 36v18"/>
+                        </svg>
+                    </div>
+                </section>
+
+                <section class="chalk-bottom" aria-label="甜點與飲品">
+                    <div class="chalk-col">
+                        <div class="chalk-ribbon">
+                            <span>DESSERTS</span>
+                            <span class="tiny-heart" aria-hidden="true">♥</span>
+                        </div>
+                        <ul class="chalk-lines compact" aria-label="甜點">
+                            <li class="chalk-line">
+                                <span class="line-name">蔓越莓司康</span>
+                                <span class="line-dots" aria-hidden="true"></span>
+                                <span class="line-price">60</span>
+                            </li>
+                            <li class="chalk-line">
+                                <span class="line-name">紐約重乳酪</span>
+                                <span class="line-dots" aria-hidden="true"></span>
+                                <span class="line-price">110</span>
+                            </li>
+                            <li class="chalk-line">
+                                <span class="line-name">伯爵茶巴斯克</span>
+                                <span class="line-dots" aria-hidden="true"></span>
+                                <span class="line-price">150</span>
+                            </li>
+                            <li class="chalk-line">
+                                <span class="line-name">法式檸檬塔</span>
+                                <span class="line-dots" aria-hidden="true"></span>
+                                <span class="line-price">150</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="chalk-col">
+                        <div class="chalk-ribbon">
+                            <span>DRINKS</span>
+                            <span class="tiny-heart" aria-hidden="true">♥</span>
+                        </div>
+                        <ul class="chalk-lines compact" aria-label="飲品">
+                            <li class="chalk-line">
+                                <span class="line-name">經典美式</span>
+                                <span class="line-dots" aria-hidden="true"></span>
+                                <span class="line-price">90</span>
+                            </li>
+                            <li class="chalk-line">
+                                <span class="line-name">漂浮冰咖啡</span>
+                                <span class="line-dots" aria-hidden="true"></span>
+                                <span class="line-price">110</span>
+                            </li>
+                            <li class="chalk-line">
+                                <span class="line-name">抹茶拿鐵</span>
+                                <span class="line-dots" aria-hidden="true"></span>
+                                <span class="line-price">140</span>
+                            </li>
+                            <li class="chalk-line">
+                                <span class="line-name">季節水果氣泡</span>
+                                <span class="line-dots" aria-hidden="true"></span>
+                                <span class="line-price">110</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <div class="chalk-bottom-heart" aria-hidden="true">♥</div>
+            </div>
+        </div>
+
+        <div class="switch-view-btn">
+            <a href="menu.html" class="chalk-btn">切換至完整菜單頁</a>
+        </div>
+    </main>
+
+    <template id="legacy-chalkboard">
+    <main class="chalkboard-container fade-in-up">
+        <div class="board-frame">
+            <div class="board-content">
+                
+                <!-- Left Column: Cakes -->
+                <div class="board-col left-col">
+                    <h2 class="board-title">本日私藏甜點 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMkwxNS4wOSA4LjI2TDIyIDkuMjdMMTcgMTQuMTRMMTguMTggMjFMMTIgMTcuMjdMNS44MiAyMUw3IDE0LjE0TDIgOS4yN0w4LjkxIDguMjZMMTIgMloiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC41Ii8+PC9zdmc+" class="deco-star" alt="*"></h2>
+                    
+                    <ul class="chalk-list">
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">手作蔓越莓司康</span>
+                                <span class="chk-price">60-</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">紐約重乳酪 <span class="eng">Cheese Cake</span></span>
+                                <span class="chk-price">110-</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">大人系提拉米蘇</span>
+                                <span class="chk-price">100-</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">伯 EARL 爵巴斯克</span>
+                                <span class="chk-price">150-</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">法式熱情檸檬塔 <span class="eng">Cake</span></span>
+                                <span class="chk-price">150-</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="board-footer-left">
+                        <p>最低消費 100 / 人 (不計外帶)</p>
+                        <p>平日不限時 ‧ 假日限時 120 分鐘</p>
+                        <p>提供 WIFI 及插座，充電請隨心捐助 $10 元</p>
+                    </div>
+                    
+                    <div class="sticker-deco">
+                        <div class="sticker-img"></div> 
+                    </div>
+                </div>
+
+                <!-- Vertical Divider -->
+                <div class="chalk-divider"></div>
+
+                <!-- Right Column: Drinks -->
+                <div class="board-col right-col">
+                    <h2 class="board-title center">飲 品 目 錄</h2>
+                    
+                    <ul class="chalk-list">
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">經典美式咖啡</span>
+                                <div class="chk-opts">
+                                    <span class="temp-badge cold">I</span>
+                                    <span class="temp-badge hot">H</span>
+                                    <span class="chk-price">90</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">西西里雷蒙咖啡</span>
+                                <div class="chk-opts">
+                                    <span class="temp-badge cold">I</span>
+                                    <span class="chk-price">120</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">手沖耶加雪菲</span>
+                                <div class="chk-opts">
+                                    <span class="temp-badge cold">I</span>
+                                    <span class="temp-badge hot">H</span>
+                                    <span class="chk-price">180</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">黑糖海鹽拿鐵</span>
+                                <div class="chk-opts">
+                                    <span class="temp-badge cold">I</span>
+                                    <span class="temp-badge hot">H</span>
+                                    <span class="chk-price">160</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">漂浮冰咖啡</span>
+                                <div class="chk-opts">
+                                    <span class="temp-badge cold">I</span>
+                                    <span class="chk-price">110</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">阿法奇朵咖啡 <span class="small-note">with 香草</span></span>
+                                <div class="chk-opts">
+                                    <span class="temp-badge cold">I</span>
+                                    <span class="temp-badge hot">H</span>
+                                    <span class="chk-price">100</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">伯爵鮮奶茶 <span class="stack-note">錫蘭<br>鮮乳</span></span>
+                                <div class="chk-opts">
+                                    <span class="temp-badge cold">I</span>
+                                    <span class="temp-badge hot">H</span>
+                                    <span class="chk-price">130</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">經典醇濃可可飲</span>
+                                <div class="chk-opts">
+                                    <span class="temp-badge cold">I</span>
+                                    <span class="temp-badge hot">H</span>
+                                    <span class="chk-price">120</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">一保堂抹茶拿鐵</span>
+                                <div class="chk-opts">
+                                    <span class="temp-badge cold">I</span>
+                                    <span class="temp-badge hot">H</span>
+                                    <span class="chk-price">140</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">季節水果氣泡飲</span>
+                                <div class="chk-opts">
+                                    <span class="temp-badge cold">I</span>
+                                    <span class="chk-price">110</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-row">
+                                <span class="chk-name">接骨木花茶特調</span>
+                                <div class="chk-opts">
+                                    <span class="temp-badge cold">I</span>
+                                    <span class="chk-price">150</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="switch-view-btn">
+            <a href="menu.html" class="chalk-btn">切換至完整菜單頁</a>
+        </div>
+    </main>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>

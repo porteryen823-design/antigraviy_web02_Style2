@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Porter Coffee 菜單 - 精品咖啡、手作甜點、茶飲與輕食">
+  <title>菜單 - Porter Coffee 都市咖啡館</title>
+  <link rel="stylesheet" href="./assets/css/tailwind.css">
+</head>
+<body>
+  <!-- 導航列 -->
+  <nav class="fixed top-4 left-4 right-4 z-50 transition-all duration-300">
+    <div class="container-custom">
+      <div class="bg-white/70 backdrop-blur-sm rounded-3xl px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center space-x-2">
+          <div class="w-10 h-10 bg-coffee-gradient rounded-full flex items-center justify-center">
+            <span class="text-white font-heading font-bold text-xl">P</span>
+          </div>
+          <span class="font-heading font-bold text-xl text-primary hidden sm:inline">Porter Coffee</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="nav-link link">首頁</a>
+          <a href="about.html" class="nav-link link">關於我們</a>
+          <a href="menu.html" class="nav-link link">菜單</a>
+          <a href="space.html" class="nav-link link">空間</a>
+          <a href="blog.html" class="nav-link link">部落格</a>
+          <a href="contact.html" class="nav-link link">聯絡</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 cursor-pointer" aria-label="開啟選單" aria-expanded="false">
+          <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden mt-2 bg-white rounded-3xl shadow-soft overflow-hidden">
+        <div class="flex flex-col p-4 space-y-3">
+          <a href="index.html" class="nav-link link py-2">首頁</a>
+          <a href="about.html" class="nav-link link py-2">關於我們</a>
+          <a href="menu.html" class="nav-link link py-2">菜單</a>
+          <a href="space.html" class="nav-link link py-2">空間</a>
+          <a href="blog.html" class="nav-link link py-2">部落格</a>
+          <a href="contact.html" class="nav-link link py-2">聯絡</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 頁面標題 -->
+  <section class="pt-32 pb-16 bg-warm-gradient">
+    <div class="container-custom text-center">
+      <h1 class="text-h1 text-primary mb-4 fade-in-element">菜單</h1>
+      <p class="text-xl text-text-secondary max-w-2xl mx-auto fade-in-element">
+        精品咖啡、手作甜點、茶飲與輕食
+      </p>
+    </div>
+  </section>
+
+  <!-- 分類導航 -->
+  <section class="py-8 bg-bg-primary sticky top-24 z-40 shadow-soft">
+    <div class="container-custom">
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="#coffee" class="btn btn-primary">咖啡</a>
+        <a href="#tea" class="btn btn-outline">茶飲</a>
+        <a href="#dessert" class="btn btn-outline">甜點</a>
+        <a href="#light-meal" class="btn btn-outline">輕食</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 咖啡 -->
+  <section id="coffee" class="section bg-bg-primary">
+    <div class="container-custom">
+      <h2 class="text-h2 text-primary mb-12 text-center fade-in-element">精品咖啡</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card fade-in-element cursor-pointer">
+          <img src="assets/images/menu/coffee-drip.png" alt="衣索比亞 耶加雪菲" class="w-full h-full object-cover aspect-square">
+          <div class="p-6">
+            <h3 class="text-h5 text-primary mb-2">衣索比亞 耶加雪菲</h3>
+            <p class="text-text-muted text-small mb-3">花香、柑橘、明亮酸質</p>
+            <p class="text-primary font-semibold">NT$ 180</p>
+          </div>
+        </div>
+        <div class="card fade-in-element cursor-pointer">
+          <img src="assets/images/menu/coffee-colombia.png" alt="哥倫比亞 薇拉" class="w-full h-full object-cover aspect-square">
+          <div class="p-6">
+            <h3 class="text-h5 text-primary mb-2">哥倫比亞 薇拉</h3>
+            <p class="text-text-muted text-small mb-3">焦糖、堅果、圓潤口感</p>
+            <p class="text-primary font-semibold">NT$ 160</p>
+          </div>
+        </div>
+        <div class="card fade-in-element cursor-pointer">
+          <img src="assets/images/menu/coffee-latte.png" alt="肯亞 AA" class="w-full h-full object-cover aspect-square">
+          <div class="p-6">
+            <h3 class="text-h5 text-primary mb-2">肯亞 AA</h3>
+            <p class="text-text-muted text-small mb-3">莓果、黑醋栗、濃郁風味</p>
+            <p class="text-primary font-semibold">NT$ 200</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 茶飲 -->
+  <section id="tea" class="section bg-bg-secondary">
+    <div class="container-custom">
+      <h2 class="text-h2 text-primary mb-12 text-center fade-in-element">精選茶飲</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card fade-in-element cursor-pointer">
+          <img src="assets/images/menu/tea-rose.png" alt="玫瑰烏龍茶" class="w-full h-full object-cover aspect-square">
+          <div class="p-6">
+            <h3 class="text-h5 text-primary mb-2">玫瑰烏龍茶</h3>
+            <p class="text-text-muted text-small mb-3">花香、清新、回甘</p>
+            <p class="text-primary font-semibold">NT$ 140</p>
+          </div>
+        </div>
+        <div class="card fade-in-element cursor-pointer">
+          <img src="assets/images/menu/tea-rose.png" alt="蜜香紅茶" class="w-full h-full object-cover aspect-square">
+          <div class="p-6">
+            <h3 class="text-h5 text-primary mb-2">蜜香紅茶</h3>
+            <p class="text-text-muted text-small mb-3">蜂蜜、果香、溫潤</p>
+            <p class="text-primary font-semibold">NT$ 130</p>
+          </div>
+        </div>
+        <div class="card fade-in-element cursor-pointer">
+          <img src="assets/images/menu/tea-rose.png" alt="抹茶拿鐵" class="w-full h-full object-cover aspect-square">
+          <div class="p-6">
+            <h3 class="text-h5 text-primary mb-2">抹茶拿鐵</h3>
+            <p class="text-text-muted text-small mb-3">濃郁抹茶、綿密奶泡</p>
+            <p class="text-primary font-semibold">NT$ 150</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 甜點 -->
+  <section id="dessert" class="section bg-bg-primary">
+    <div class="container-custom">
+      <h2 class="text-h2 text-primary mb-12 text-center fade-in-element">手作甜點</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card fade-in-element cursor-pointer">
+          <img src="assets/images/menu/dessert-cake.png" alt="玫瑰草莓塔" class="w-full h-full object-cover aspect-square">
+          <div class="p-6">
+            <h3 class="text-h5 text-primary mb-2">玫瑰草莓塔</h3>
+            <p class="text-text-muted text-small mb-3">新鮮草莓、玫瑰奶油</p>
+            <p class="text-primary font-semibold">NT$ 150</p>
+          </div>
+        </div>
+        <div class="card fade-in-element cursor-pointer">
+          <img src="assets/images/menu/dessert-pudding.png" alt="焦糖布丁" class="w-full h-full object-cover aspect-square">
+          <div class="p-6">
+            <h3 class="text-h5 text-primary mb-2">焦糖布丁</h3>
+            <p class="text-text-muted text-small mb-3">濃郁奶香、焦糖脆片</p>
+            <p class="text-primary font-semibold">NT$ 120</p>
+          </div>
+        </div>
+        <div class="card fade-in-element cursor-pointer">
+          <img src="assets/images/menu/dessert-cake.png" alt="提拉米蘇" class="w-full h-full object-cover aspect-square">
+          <div class="p-6">
+            <h3 class="text-h5 text-primary mb-2">提拉米蘇</h3>
+            <p class="text-text-muted text-small mb-3">咖啡、可可、馬斯卡彭</p>
+            <p class="text-primary font-semibold">NT$ 160</p>
+          </div>
+        </div>
+        <div class="card fade-in-element cursor-pointer">
+          <img src="assets/images/menu/dessert-pudding.png" alt="檸檬塔" class="w-full h-full object-cover aspect-square">
+          <div class="p-6">
+            <h3 class="text-h5 text-primary mb-2">檸檬塔</h3>
+            <p class="text-text-muted text-small mb-3">清新檸檬、酥脆塔皮</p>
+            <p class="text-primary font-semibold">NT$ 140</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 輕食 -->
+  <section id="light-meal" class="section bg-bg-secondary">
+    <div class="container-custom">
+      <h2 class="text-h2 text-primary mb-12 text-center fade-in-element">輕食餐點</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card fade-in-element cursor-pointer">
+          <img src="assets/images/menu/light-meal-sandwich.png" alt="酪梨雞肉三明治" class="w-full h-full object-cover aspect-video">
+          <div class="p-6">
+            <h3 class="text-h5 text-primary mb-2">酪梨雞肉三明治</h3>
+            <p class="text-text-muted text-small mb-3">新鮮酪梨、嫩雞胸、全麥麵包</p>
+            <p class="text-primary font-semibold">NT$ 220</p>
+          </div>
+        </div>
+        <div class="card fade-in-element cursor-pointer">
+          <img src="assets/images/menu/light-meal-sandwich.png" alt="燻鮭魚貝果" class="w-full h-full object-cover aspect-video">
+          <div class="p-6">
+            <h3 class="text-h5 text-primary mb-2">燻鮭魚貝果</h3>
+            <p class="text-text-muted text-small mb-3">挪威燻鮭魚、奶油乳酪</p>
+            <p class="text-primary font-semibold">NT$ 240</p>
+          </div>
+        </div>
+        <div class="card fade-in-element cursor-pointer">
+          <img src="assets/images/menu/light-meal-sandwich.png" alt="季節沙拉碗" class="w-full h-full object-cover aspect-video">
+          <div class="p-6">
+            <h3 class="text-h5 text-primary mb-2">季節沙拉碗</h3>
+            <p class="text-text-muted text-small mb-3">有機生菜、藜麥、堅果</p>
+            <p class="text-primary font-semibold">NT$ 200</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 -->
+  <footer class="bg-primary text-white py-16">
+    <div class="container-custom">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+              <span class="text-primary font-heading font-bold text-xl">P</span>
+            </div>
+            <span class="font-heading font-bold text-xl">Porter Coffee</span>
+          </div>
+          <p class="text-white/80 text-small">品味生活，從一杯咖啡開始</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold mb-4">快速連結</h4>
+          <ul class="space-y-2 text-small">
+            <li><a href="about.html" class="text-white/80 hover:text-white transition-colors">關於我們</a></li>
+            <li><a href="menu.html" class="text-white/80 hover:text-white transition-colors">菜單</a></li>
+            <li><a href="space.html" class="text-white/80 hover:text-white transition-colors">空間展示</a></li>
+            <li><a href="blog.html" class="text-white/80 hover:text-white transition-colors">部落格</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold mb-4">聯絡我們</h4>
+          <ul class="space-y-2 text-small text-white/80">
+            <li>📍 新竹市公園路 142 號</li>
+            <li>📞 0936891502</li>
+            <li>✉️ porteryen@gmail.com</li>
+            <li>🕐 週一至週日 09:00 - 21:00</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold mb-4">追蹤我們</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors cursor-pointer" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors cursor-pointer" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/20 pt-8 text-center text-small text-white/60">
+        <p>&copy; 2026 Porter Coffee. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="hidden fixed bottom-8 right-8 w-12 h-12 bg-primary hover:bg-primary-dark text-white rounded-full shadow-soft-lg transition-all duration-300 cursor-pointer z-40" aria-label="回到頂部">
+    <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+  </button>
+
+  <script src="./assets/js/navigation.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

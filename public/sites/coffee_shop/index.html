@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>萃 ‧ 光陰 | Essence Coffee</title>
+    <meta name="description" content="在繁忙都市中尋找一絲寧靜。萃取時光，品味生活。">
+    <!-- Local Fonts -->
+    <link rel="stylesheet" href="fonts/noto-serif-tc.css">
+    <link rel="stylesheet" href="fonts/outfit.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Local FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="logo">萃 ‧ 光陰</div>
+        <div class="nav-links">
+            <a href="/" target="_top" style="color: #A77A50; font-weight: bold;">回到作品集</a>
+            <a href="#home">首頁</a>
+            <a href="#about">故事</a>
+            <a href="#menu">本季精選</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">菜單 <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="menu.html">完整菜單</a>
+                    <a href="menu_board.html">黑板菜單</a>
+                </div>
+            </div>
+            <a href="#visit">探訪</a>
+        </div>
+        <button class="cta-small">訂位</button>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in-up">萃取時光，<br>不只是咖啡。</h1>
+            <p class="fade-in-up delay-1">每一杯，都是與自己對話的片刻。</p>
+            <a href="#menu" class="cta-button fade-in-up delay-2">探索風味</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+    </header>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <img src="images/about-coffee.jpg" alt="Barista pouring coffee">
+                    <div class="image-accent"></div>
+                </div>
+                <div class="about-text reveal-right">
+                    <h2>匠心 ‧ 獨運</h2>
+                    <p class="subtitle">從一顆豆子到一杯香醇</p>
+                    <p>我們相信，咖啡不僅僅是提神的飲品，更是一種生活的藝術。嚴選來自世界各地的高海拔阿拉比卡豆，經過自家烘焙師的精心調配，只為呈現最純粹的風味。</p>
+                    <p>在這裡，時間仿佛慢了下來。您可以靜靜聆聽咖啡滴落的聲音，感受香氣在空氣中彌漫。</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="number">15+</span>
+                            <span class="label">產地嚴選</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="number">100%</span>
+                            <span class="label">匠心烘焙</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>本季精選</h2>
+                <div class="separator"></div>
+                <p>品味季節限定的獨特風味</p>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-card reveal-up delay-1">
+                    <div class="card-image">
+                        <img src="images/menu_yirgacheffe_drip.png" alt="Hand drip coffee">
+                    </div>
+                    <div class="card-content">
+                        <h3>耶加雪菲 ‧ 水洗</h3>
+                        <p class="desc">柑橘香氣，帶有茉莉花香的尾韻，清新明亮。</p>
+                        <div class="price">$180</div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-card reveal-up delay-2">
+                    <div class="card-image">
+                        <img src="images/menu_brown_sugar_latte.png" alt="Latte Art">
+                    </div>
+                    <div class="card-content">
+                        <h3>黑糖海鹽拿鐵</h3>
+                        <p class="desc">沖繩黑糖與海鹽的完美平衡，口感綿密濃郁。</p>
+                        <div class="price">$160</div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-card reveal-up delay-3">
+                    <div class="card-image">
+                        <img src="images/menu_basque_cake.png" alt="Dessert">
+                    </div>
+                    <div class="card-content">
+                        <h3>伯爵茶巴斯克</h3>
+                        <p class="desc">濃郁乳酪交織優雅伯爵茶香，外焦內嫩。</p>
+                        <div class="price">$140</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-cta reveal-up">
+                <a href="menu.html" class="secondary-btn">查看完整菜單</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="visit" class="section visit-section">
+        <div class="parallax-bg"></div>
+        <div class="container relative z-10">
+            <div class="visit-card reveal-up">
+                <div class="visit-info">
+                    <h2>探訪我們</h2>
+                    <p class="address"><i class="fas fa-map-marker-alt"></i> 台北市大安區青田街七巷六號</p>
+                    <p class="hours"><i class="fas fa-clock"></i> 每日 10:00 - 18:00 (週二公休)</p>
+                    <p class="phone"><i class="fas fa-phone"></i> (02) 2345-6789</p>
+                    
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="visit-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0022891566243!2d121.52876!3d25.026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97d87e3a3e5%3A0x3e8e3e3e3e3e3e3e!2z5Y-w5YyX5biC5aSn5a6J5Y2A6Z2S55Sw6KGXNuW3t-WFrOiZnw!5e0!3m2!1szh-TW!2stw!4v1234567890123!5m2!1szh-TW!2stw" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; border-radius: 4px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 萃 ‧ 光陰 Essence Coffee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

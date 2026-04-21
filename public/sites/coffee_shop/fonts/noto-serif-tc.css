@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./noto-serif-tc-300.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./noto-serif-tc-500.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif TC';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./noto-serif-tc-700.ttf') format('truetype');
+}
