@@ -6,7 +6,7 @@ import './sites/web02style2/styles/global.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/antigraviy_web02_Style2">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
