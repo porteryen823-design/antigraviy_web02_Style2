@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '../../lib/assetPath';
 
 /* ── Design tokens ── */
 const C = {
@@ -141,7 +142,7 @@ const ProfileLanding = () => {
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
           <img
-            src="/sites/profile/porter_avatar.png"
+            src={getAssetPath('/sites/profile/porter_avatar.png')}
             alt="Porter"
             style={{
               width: '48px', height: '48px',
@@ -224,7 +225,7 @@ const ProfileLanding = () => {
           <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,2fr)', gap: '5rem', alignItems: 'center' }}>
             <motion.div {...fadeUp(0.1)}>
               <img
-                src="/sites/profile/porter_avatar.png"
+                src={getAssetPath('/sites/profile/porter_avatar.png')}
                 alt="Porter"
                 style={{ width: '100%', maxWidth: '320px', borderRadius: '4px', border: `1px solid ${C.border}`, filter: 'grayscale(20%)', display: 'block' }}
               />

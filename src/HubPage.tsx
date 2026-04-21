@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { getAssetPath } from './lib/assetPath';
 
 interface SiteCard {
   id: string;
@@ -239,7 +240,7 @@ const HubPage = () => {
                   {/* Preview Image */}
                   <div style={{ position: 'relative', height: '14rem', overflow: 'hidden' }}>
                     <img
-                      src={site.preview}
+                      src={getAssetPath(site.preview)}
                       alt={site.title}
                       style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }}
                       onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = 'scale(1.05)'; }}
