@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(ssh -i \"C:/Users/porte/Downloads/dify-aws-porter-myweb2.pem\" ubuntu@54.168.238.55 \"echo 'Connected successfully' && uptime\")"
-    ]
-  }
-}

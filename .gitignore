@@ -35,3 +35,8 @@ env/
 ENV/
 env.bak/
 venv.bak/
+
+# Agent & Tools
+.claude/
+.agent/
+project.tar.gz
